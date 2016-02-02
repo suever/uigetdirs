@@ -84,6 +84,8 @@ function dirs = uigetdirs(startpath, titleString)
     set(hfile, 'units',     'normalized', ...
                'position',  [0 0 1 1]);
 
+    movegui(fig, 'center');
+
     % Make figure visible now that everything is ready
     set(fig, 'visible', 'on')
     set(fig, 'deletefcn', @(s,e)cleanup(hfile))
